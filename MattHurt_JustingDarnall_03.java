@@ -317,25 +317,39 @@ public class MattHurt_JustinDarnall_JorgeSilva_03 {
 		        GradeItem[] grade = listOfGradeItems.toArray(gradeCheat);
 		        Student s1;
 		        GradeItem g1;
+			int sumMax;
+			int sumActual;
+			int percent;
 		        
-		        for (int i = 0; i < listOfStudents.getLength(); i++) {
-		        	for(int j = 0; j < grade.length; j++) {
-		        		if(grade[j].getstudentId() == student[i].getstudentId()) {
-		        			System.out.print(grade[j].studentId()); // this needs to be completed
-		        		}
-		        	}
+		        for (int i = 0; i < student.length; i+4) {
+		        	System.out.println(listOfStudents[i] + "\t" + listOfStudents[i+1] + "\t" + listOfStudents[i+2] + "\t" + listOfStudents[i+3]);
+				System.out.println("Grade Items");
+				sumMax = 0;
+				sumActual = 0;
+				percent = 0;
+				
+				for(int j = 0; j < grade.length; j+7) {
+					if(grade[j+1].equals(student[i])) {
+		        			System.out.println(grade[j] + "\t" + grade[j+2] + "\t" + grade[j+3] + "\t" + grade[j+4] + "\t" + grade[j+5] + "\t" + grade[j+6]); // this needs to be completed
+						sumMax += grade[j+5];
+						sumActual += grade[j+6];
+		        		} // End if
+		        	} // End for
+				percent = sumActual/sumMax;
+				System.out.println("===========================================================================");
+				System.out.println("Total\t\t\t\t\t\t\t\t\t\t" + sumMax + "\t" + sumActual + "\t" percent + "%\n");
 				//***** this needs to be formated *****
 				
 		        	//student[i] = (Student) student[i];
-		        	System.out.println("StudentID\tFirstName\tLastName\tEmail");
+		        	//System.out.println("StudentID\tFirstName\tLastName\tEmail");
 		        	
-		        	System.out.println("Grade Items");
-		        	System.out.println("GradeItemID\tCourseID\tType\tDate\tMaximum Score\t Actual Score\tGrade (%)*");
-		        	System.out.println("===========================================================================");
-		        	System.out.println("Total\t\t\t\t\t\t\t\t\t\tSumOfMaxScore\tSumOfActualScore\tGrade (%)");
+		        	//System.out.println("Grade Items");
+		        	//System.out.println("GradeItemID\tCourseID\tType\tDate\tMaximum Score\t Actual Score\tGrade (%)*");
+		        	//System.out.println("===========================================================================");
+		        	//System.out.println("Total\t\t\t\t\t\t\t\t\t\tSumOfMaxScore\tSumOfActualScore\tGrade (%)");
 		        	
 		        	//System.out.print(student[i].getstudentId()+ "\t" + ));
-		        }
+		        } // End for
 		       
 		   }
 
