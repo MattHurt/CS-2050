@@ -1,8 +1,8 @@
-/**Class name: MattHurt_02
+/**Class name: MattHurt_JustinDarnall_JorgeSilva_03
  * Purpose: This program tests the code in the Student and GradeItem classes
  * for each component: Constructor, Get methods, toString method, equals method.
- * Name: Matt Hurt
- * Assignment: Project #2
+ * Name: Matt Hurt, Justin Darnall, Jorge Silva
+ * Assignment: Project #3
  * IDE: Eclipse, OS: Mac OSX
  * Vocab word: Cacophony - 
 	1 : harsh or discordant sound : dissonance; specifically : harshness in the 
@@ -27,7 +27,7 @@ import java.io.IOException;
 
 // ***** Begin Class *****
 
-public class MattHurt_JustinDarnall_03 {
+public class MattHurt_JustinDarnall_JorgeSilva_03 {
 	
 	  // ***** Begin Declarations *****	
 	
@@ -305,7 +305,7 @@ public class MattHurt_JustinDarnall_03 {
 		   */
 		   
 	
-		   public static void generateReport() {
+		   public static void generateReport() { // ***** NOT FINISHED *****
 		        // The name of the array is what should be used below
 			   /**
 			    * Copy line 313 and 314 and make another array for GradeBookList because
@@ -321,9 +321,11 @@ public class MattHurt_JustinDarnall_03 {
 		        for (int i = 0; i < listOfStudents.getLength(); i++) {
 		        	for(int j = 0; j < grade.length; j++) {
 		        		if(grade[j].getstudentId() == student[i].getstudentId()) {
-		        			System.out.print(grade[j].studentId() ect, ect, ect,);
+		        			System.out.print(grade[j].studentId() ect, ect, ect,); // this needs to be completed
 		        		}
 		        	}
+				//***** this needs to be formated *****
+				
 		        	//student[i] = (Student) student[i];
 		        	System.out.println("StudentID\tFirstName\tLastName\tEmail");
 		        	
