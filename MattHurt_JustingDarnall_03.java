@@ -322,7 +322,8 @@ public class MattHurt_JustinDarnall_JorgeSilva_03 {
 			int percent;
 		        
 		        for (int i = 0; i < student.length; i+4) {
-		        	System.out.println(listOfStudents[i] + "\t" + listOfStudents[i+1] + "\t" + listOfStudents[i+2] + "\t" + listOfStudents[i+3]);
+		        	System.out.println(listOfStudents[i] + "\t" + listOfStudents[i+1] + "\t" + listOfStudents[i+2] 
+						   + "\t" + listOfStudents[i+3]);
 				System.out.println("Grade Items");
 				sumMax = 0;
 				sumActual = 0;
@@ -330,9 +331,16 @@ public class MattHurt_JustinDarnall_JorgeSilva_03 {
 				
 				for(int j = 0; j < grade.length; j+7) {
 					if(grade[j+1].equals(student[i])) {
-		        			System.out.println(grade[j] + "\t" + grade[j+2] + "\t" + grade[j+3] + "\t" + grade[j+4] + "\t" + grade[j+5] + "\t" + grade[j+6]); // this needs to be completed
+		        			System.out.println(grade[j] + "\t" 
+							+ grade[j+2] + "\t" 
+							+ grade[j+3] + "\t" 
+							+ grade[j+4] + "\t" 
+							+ grade[j+5] + "\t" 
+							+ grade[j+6]);
+						
 						sumMax += grade[j+5];
 						sumActual += grade[j+6];
+						
 		        		} // End if
 		        	} // End for
 				percent = sumActual/sumMax;
