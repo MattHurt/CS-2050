@@ -334,7 +334,7 @@ public class MattHurt_JustinDarnall_JorgeSilva_03 {
 		        	System.out.println("===========================================================================");
 		        	System.out.println("Total\t\t\t\t\t\t\t\t\t\tSumOfMaxScore\tSumOfActualScore\tGrade (%)");
 		        	
-		        	System.out.print(student[i].getstudentId()+ "\t" + ));
+		        	//System.out.print(student[i].getstudentId()+ "\t" + ));
 		        }
 		       
 		   }
