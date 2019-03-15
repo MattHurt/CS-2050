@@ -321,7 +321,7 @@ public class MattHurt_JustinDarnall_JorgeSilva_03 {
 		        for (int i = 0; i < listOfStudents.getLength(); i++) {
 		        	for(int j = 0; j < grade.length; j++) {
 		        		if(grade[j].getstudentId() == student[i].getstudentId()) {
-		        			System.out.print(grade[j].studentId() ect, ect, ect,); // this needs to be completed
+		        			System.out.print(grade[j].studentId()); // this needs to be completed
 		        		}
 		        	}
 				//***** this needs to be formated *****
